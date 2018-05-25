@@ -1,0 +1,24 @@
+(:author "Muhammad Attiyah"
+ :deploy-dir "/Users/muhammad/Projects/Personal/muattiyah-coleslaw-generated"
+ :domain "http://muattiyah.com"
+ :excerpt-sep "<!--more-->"
+ :feeds ("lisp")
+ :plugins ((mathjax)
+           (sitemap)
+           (static-pages)
+					 (analytics :tracking-code "UA-100940716-1")
+					 (gh-pages :cname t)
+           ; (disqus :shortname "my-site-name")
+           ; (incremental)  ;; *Remove comment to enable incremental builds.
+           ; (versioned)    ;; *Remove comment to enable symlinked, timestamped deploys.
+          )
+ :routing ((:post           "posts/~a")
+           (:tag-index      "tag/~a")
+           (:month-index    "date/~a")
+           (:numeric-index  "~d")
+           (:feed           "~a.xml")
+           (:tag-feed       "tag/~a.xml"))
+ :sitenav ((:url "http://muattiyah.com" :name "Home"))
+ :staging-dir "/tmp/coleslaw/"
+ :title "Muhammad Attiyah - Home"
+ :theme "minimal")

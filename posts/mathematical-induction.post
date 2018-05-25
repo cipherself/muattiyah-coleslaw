@@ -1,0 +1,113 @@
+;;;;;
+title: Mathematical Induction
+date: 2017-06-12
+tags: math
+format: html
+;;;;;
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1801 651.57"><defs><style>.cls-1{fill:#4f2837;stroke:#1ba5b8;}.cls-1,.cls-3{stroke-miterlimit:10;}.cls-2{fill:#141411;opacity:0.18;}.cls-3{fill:none;stroke-width:2px;}.cls-3,.cls-4{stroke:#fff;}.cls-4{fill:#1d1d1b;stroke-width:0.65px;}.cls-5{font-size:123px;fill:#fff;font-family:CrimsonText-Bold, Crimson Text;font-weight:700;}</style></defs><title>induction</title><g id="Background"><rect class="cls-1" x="0.5" y="0.5" width="1800" height="600"/></g><g id="Arrow"><path class="cls-2" d="M1375.6,539.76c-41.56-36-76.09-124.66-4.59-169.32,139.7-87.26,13.24-163.74-3.37-174H1245.28l242.6-169.91L1751.29,195.4l-130.47,1.07c12.74,12.21,108.66,98.75-15.88,179.08-83.8,54-42.37,130.76,8.21,164.12Z" transform="translate(0.5 0.5)"/></g><g id="Ladder"><line class="cls-3" x1="1481.98" y1="24.6" x2="1393.6" y2="560.08"/><line class="cls-3" x1="1499.82" y1="24.6" x2="1588.5" y2="560.08"/><line class="cls-3" x1="1481.81" y1="25.62" x2="1499.99" y2="25.62"/><line class="cls-3" x1="1481.72" y1="26.16" x2="1500.08" y2="26.16"/><line class="cls-3" x1="1481.58" y1="27.05" x2="1500.22" y2="27.05"/><line class="cls-3" x1="1481.39" y1="28.21" x2="1500.41" y2="28.21"/><line class="cls-3" x1="1481.19" y1="29.41" x2="1500.61" y2="29.41"/><line class="cls-3" x1="1480.94" y1="30.9" x2="1500.86" y2="30.9"/><line class="cls-3" x1="1480.6" y1="32.98" x2="1501.21" y2="32.98"/><line class="cls-3" x1="1480.16" y1="35.61" x2="1501.64" y2="35.61"/><line class="cls-3" x1="1479.57" y1="39.21" x2="1502.24" y2="39.21"/><line class="cls-3" x1="1479.13" y1="41.87" x2="1502.68" y2="41.87"/><line class="cls-3" x1="1478.55" y1="45.38" x2="1503.26" y2="45.38"/><line class="cls-3" x1="1477.87" y1="49.26" x2="1503.86" y2="49.26"/><line class="cls-3" x1="1477.15" y1="53.57" x2="1504.57" y2="53.57"/><line class="cls-3" x1="1476.41" y1="58.37" x2="1505.41" y2="58.37"/><line class="cls-3" x1="1475.46" y1="63.76" x2="1506.25" y2="63.76"/><line class="cls-3" x1="1474.45" y1="69.86" x2="1507.26" y2="69.86"/><line class="cls-3" x1="1473.3" y1="76.82" x2="1508.4" y2="76.82"/><line class="cls-3" x1="1471.98" y1="84.82" x2="1509.73" y2="84.82"/><line class="cls-3" x1="1470.43" y1="94.13" x2="1511.26" y2="94.13"/><line class="cls-3" x1="1468.7" y1="105.09" x2="1513.15" y2="105.09"/><line class="cls-3" x1="1466.45" y1="118.19" x2="1515.23" y2="118.19"/><line class="cls-3" x1="1463.81" y1="134.12" x2="1517.86" y2="134.12"/><line class="cls-3" x1="1460.64" y1="153.9" x2="1521.23" y2="153.9"/><line class="cls-3" x1="1456.36" y1="179.13" x2="1525.29" y2="179.13"/><line class="cls-3" x1="1450.84" y1="212.42" x2="1530.79" y2="212.42"/><line class="cls-3" x1="1444.57" y1="249.35" x2="1537.04" y2="249.35"/><line class="cls-3" x1="1432.06" y1="325.84" x2="1549.51" y2="325.84"/><line class="cls-3" x1="1438.92" y1="285.5" x2="1543.03" y2="285.5"/><line class="cls-3" x1="1414.3" y1="434.69" x2="1567.73" y2="434.69"/><line class="cls-3" x1="1402.09" y1="508.5" x2="1579.96" y2="508.5"/><line class="cls-3" x1="1423.4" y1="379.5" x2="1558.59" y2="379.5"/></g><g id="People"><g id="Figure_with_Child" data-name="Figure with Child"><rect class="cls-4" x="1441.6" y="466.04" width="11.96" height="57.23"/><polygon class="cls-4" points="1492.64 536.11 1492.64 466.04 1453.56 466.04 1453.56 538.4 1453.58 538.4 1453.58 599.31 1467.43 599.31 1467.43 537.94 1478.85 537.94 1478.85 599.31 1492.71 599.31 1492.71 536.11 1492.64 536.11"/><circle class="cls-4" cx="1472.57" cy="449.16" r="16.88"/><polygon class="cls-4" points="1542.74 522.35 1509.83 504.81 1509.41 513.14 1542.33 530.67 1542.74 522.35"/><rect class="cls-4" x="1565.84" y="520.52" width="7.07" height="32.64"/><polygon class="cls-4" points="1542.74 561.94 1542.74 520.52 1565.84 520.52 1565.84 563.3 1565.83 563.3 1565.83 599.31 1557.64 599.31 1557.64 563.02 1550.88 563.02 1550.88 599.31 1542.69 599.31 1542.69 561.94 1542.74 561.94"/><circle class="cls-4" cx="1554.61" cy="510.54" r="9.98"/><polygon class="cls-4" points="1504.59 466.04 1524.38 521.04 1509.41 513.14 1492.63 466.04 1504.59 466.04"/></g></g><g id="Child"><rect class="cls-4" x="1509.74" y="337.53" width="7.7" height="35.52"/><rect class="cls-4" x="1476.85" y="337.53" width="7.7" height="35.52"/><polygon class="cls-4" points="1484.59 382.62 1484.59 337.53 1509.74 337.53 1509.74 384.09 1509.73 384.09 1509.73 423.28 1500.81 423.28 1500.81 383.79 1493.46 383.79 1493.46 423.28 1484.55 423.28 1484.55 382.62 1484.59 382.62"/><circle class="cls-4" cx="1497.51" cy="326.67" r="10.86"/><rect class="cls-4" x="1504.85" y="197.64" width="5.38" height="24.84"/><rect class="cls-4" x="1481.85" y="197.64" width="5.38" height="24.84"/><polygon class="cls-4" points="1487.26 229.16 1487.26 197.64 1504.85 197.64 1504.85 230.19 1504.84 230.19 1504.84 257.59 1498.6 257.59 1498.6 229.98 1493.46 229.98 1493.46 257.59 1487.23 257.59 1487.23 229.16 1487.26 229.16"/><circle class="cls-4" cx="1496.29" cy="190.04" r="7.59"/><rect class="cls-4" x="1495.13" y="85.37" width="2.2" height="10.16"/><rect class="cls-4" x="1485.72" y="85.37" width="2.2" height="10.16"/><polygon class="cls-4" points="1487.93 98.27 1487.93 85.37 1495.13 85.37 1495.13 98.69 1495.13 98.69 1495.13 109.91 1492.57 109.91 1492.57 98.61 1490.47 98.61 1490.47 109.91 1487.92 109.91 1487.92 98.27 1487.93 98.27"/><circle class="cls-4" cx="1491.63" cy="82.26" r="3.11"/><text class="cls-5" transform="translate(128.13 257.58)">Mathematical <tspan x="0" y="147.6">Induction</tspan></text></g></svg>
+
+<p>Suppose you want to sum up the first <span class="math inline">10</span> natural numbers <span class="math inline">1, 2, 3, ...</span></p>
+<p>The most obvious way to do it would be to add the numbers consecutively like so: <br /><span class="math display">1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span><br /> No big deal, but now you want to sum the first <span class="math inline">1000</span> natural numbers i.e. <span class="math inline">1, 2, 3, ..., 1000</span>. While you’re carrying out this laborious task, your friend <strong>Hypatia</strong> passes by and tells you with a confused look “Why are you doing all that? You can just use this formula:” <br /><span class="math display">$$ \frac{n(n+1)}{2} $$</span><br /> Skeptical, you give it a try on the first <span class="math inline">10</span> natural numbers, because you already know the answer to that. So, you substitute <span class="math inline"><em>n</em></span> for <span class="math inline">10</span> and you get <br /><span class="math display">$$ \frac{10(10+1)}{2} = \frac{110}{2} = 55 $$</span><br /> Lo and Behold, it’s the right answer. Go ahead and try it for other values of <span class="math inline"><em>n</em></span> yourself, see if it works.</p>
+<p>So it works for the couple of instances that you’ve tried, but how do we know it works for the first 1024 natural numbers i.e. <span class="math inline">1, 2, 3, ..., 1024</span> or for <span class="math inline"><em>n</em> = 50000</span>. It seems implausible to actually try it for all instances of <span class="math inline"><em>n</em></span>. And even if we tried it for <span class="math inline"><em>n</em></span> up to <span class="math inline">50000</span>, we only know it works thus far, how do we know whether it works for <span class="math inline"><em>n</em> = 50001, <em>n</em> = 50002, ...<em>e</em><em>t</em><em>c</em></span> especially given the fact that the set of <a href="https://en.wikipedia.org/wiki/Natural_number">Natural Numbers</a> <span class="math inline">ℕ</span> is <a href="https://en.wikipedia.org/wiki/Countable_set">Countably Infinite</a>.</p>
+<p>If you don’t know what the last couple of phrases mean, think of it this way, if we start with the number <span class="math inline">1</span> and add <span class="math inline">1</span> to it and keep adding <span class="math inline">1</span> to the sum, you will always get a new natural number. For example, <span class="math inline">1 + 1 = 2,  2 + 1 = 3,  3 + 1 = 4</span> and so on.</p>
+<p>Obviously our manual method of verifying the technique’s applicability on single instances of <span class="math inline"><em>n</em></span> is incapable of convincing us of the applicability of the rule for any <span class="math inline"><em>n</em></span> and we need a new method to do just that, that method is <strong>Mathematical Induction</strong>.</p>
+<h2 id="definition">Definition</h2>
+<p><strong><em>Mathematical Induction</em></strong> is a general way to prove that some statement about the natural number <span class="math inline"><em>n</em></span> is true for all <span class="math inline"><em>n</em> ≥ 1</span>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>A proof by induction involves first proving that we want to prove holds for <span class="math inline"><em>n</em> = 1</span> and then proving that if it holds for <strong>any</strong> <span class="math inline"><em>n</em></span> then it holds for <span class="math inline"><em>n</em> + 1</span>.</p>
+<h2 id="analogy">Analogy</h2>
+<p>As a helpful analogy, think of the process of climbing a ladder, we will prove that we can climb the first step, then we will prove that if we can climb <strong>any</strong> step then we can climb the step that’s after it. Now we know that we can climb the first step and we know that we can climb any step after it. Symbolically, think of the first step as saying that <span class="math inline"><em>n</em> = 1</span>, think of <strong>any</strong> step as <span class="math inline"><em>n</em></span> and think of the step that follows <strong>any</strong> step as <span class="math inline"><em>n</em> + 1</span>.</p>
+<p>Informally:</p>
+<ol>
+<li>Can climb first step <span class="math inline"><em>n</em> = 1</span>.</li>
+<li>If we can climb step <span class="math inline"><em>n</em></span> then we can climb step <span class="math inline"><em>n</em> + 1</span>.</li>
+<li>Let <span class="math inline"><em>n</em></span> be <span class="math inline">1</span>, we can already climb the first step, let <span class="math inline"><em>n</em> + 1</span> be <span class="math inline">1 + 1 = 2</span>, we can climb the second step.</li>
+<li>Let <span class="math inline"><em>n</em></span> be <span class="math inline">2</span>, we know we can climb it from item <code>3</code>, so we can climb the <span class="math inline"><em>n</em> + 1</span> step which is the third step.</li>
+<li>Repeat ad infinitum, can climb any step.</li>
+</ol>
+<h2 id="outline-for-a-proof-by-induction">Outline for a proof by induction</h2>
+<p>A proof by induction will involve the following steps:</p>
+<ol>
+<li>Prove that the statement where <span class="math inline"><em>n</em> = 1</span> is true, this is called the <strong>Base Case</strong> <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>, we’ll refer to this statement as <span class="math inline"><em>S</em><sub>1</sub></span>.</li>
+<li>Prove that when <span class="math inline"><em>n</em> ≥ 1</span>, the statement <span class="math inline"><em>S</em><sub><em>n</em></sub> ⇒ <em>S</em><sub><em>n</em> + 1</sub></span> is true.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> This is called the <strong>Inductive Step</strong> <a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>.</li>
+</ol>
+<p>After we’ve completed these two steps, we say that it follows by <em>Mathematical Induction</em> that every <span class="math inline"><em>S</em><sub><em>n</em></sub></span> is true.</p>
+<h2 id="proof-sketch-for-our-summation-technique">Proof Sketch for our Summation Technique</h2>
+<p>We will first start by proving the <strong>Base Case</strong>, in our case this means proving that the technique holds for <span class="math inline"><em>n</em> = 1</span>. Again, we will refer to this statement as <span class="math inline"><em>S</em><sub>1</sub></span>.</p>
+<p>We will then proceed to the <strong>Inductive Step</strong>, proving that <span class="math inline"><em>S</em><sub><em>n</em></sub></span> ⇒ <span class="math inline"><em>S</em><sub><em>n</em> + 1</sub>.</span></p>
+<p>In our case, this means proving that <br /><span class="math display">$$ \frac{n(n+1)}{2} \implies \frac{(n+1)((n+1)+1)}{2} $$</span><br /></p>
+<h2 id="proof">Proof</h2>
+<p><strong>Base Case:</strong> When <span class="math inline"><em>n</em> = 1</span>, our formula expands to <br /><span class="math display">$$ \frac{1(1+1)}{2} $$</span><br /> which evaluates to <span class="math inline">1</span> and is true.</p>
+<p><strong>Inductive Step:</strong> Assume that our formula <span class="math inline"><em>S</em><sub><em>n</em></sub></span> is true, this means that <br /><span class="math display">$$ 1+2+3+...+n = \frac{n(n+1)}{2} $$</span><br /> is true. This is called the <strong>Induction Hypothesis</strong>. We now have to show that <span class="math inline"><em>S</em><sub><em>n</em> + 1</sub></span> is true, algebraically this means that <br /><span class="math display">$$ (1+2+3+...+n)+(n+1) = \frac{(n+1)((n+1)+1)}{2} $$</span><br /> Let’s start with the left hand side <br /><span class="math display">(1 + 2 + 3 + ... + <em>n</em>)+(<em>n</em> + 1)</span><br /> Since we’ve already assumed that S<sub>n</sub> <br /><span class="math display">$$ 1+2+3+...+n = \frac{n(n+1)}{2} $$</span><br /> is true, we can substitute it in the left hand side like so: <br /><span class="math display">$$
+\begin{align}
+(1+2+3+...+n)+(n+1) &amp; = \frac{n(n+1)}{2} + n+1\\
+&amp; = \frac{n(n+1)+2(n+1)}{2}\\
+&amp; = \frac{n^2+n+2n+2}{2}\\
+&amp; = \frac{n^2+3n+2}{2}\\
+&amp; = \frac{(n+1)(n+2)}{2}\\
+&amp; = \frac{(n+1)((n+1)+1)}{2}
+\end{align}
+$$</span><br /> This shows us that <span class="math inline"><em>S</em><sub><em>n</em> + 1</sub></span> is indeed true if <span class="math inline"><em>S</em><sub><em>n</em></sub></span> is true. Since we’ve proven the <strong>Base Case</strong> and conducted the <strong>Inductive Step</strong>, our formula <br /><span class="math display">$$ \frac{n(n+1)}{2} $$</span><br /> is true for all numbers <span class="math inline"><em>n</em> ≥ 1</span> by <strong>Mathematical Induction</strong>.</p>
+<p style="text-align:right;">\( \square \)</p>
+
+<h2 id="examples">Examples</h2>
+<h3 id="proposition">Proposition</h3>
+<p>If <span class="math inline"><em>n</em> ∈ ℕ</span><a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> then the sum of the first <span class="math inline"><em>n</em></span> odd numbers <span class="math inline">1 + 3 + 5 + 7 + ... + (2<em>n</em> − 1)</span> is <span class="math inline"><em>n</em><sup>2</sup></span>.</p>
+<h4>Proof</h4>
+<div class="proof-body">
+<p><b>Base Case: </b>\( S_1 = 1^2 = 1 \), our base case holds.</p>
+<p><b>Inductive Step: </b></p>
+<p>Assume that \( 1+3+5+7+...+(2n-1)=n^2 \)</p>
+<p>Show that \( S_{n+1}: 1+3+5+7+...+(2(n)-1)+(2(n+1)-1)=(n+1)^2 \)</p>
+<p>\[
+\begin{align}
+1+3+5+7+...+(2n-1)+(2n+1) & = n^2+2n+1\\
+& = (n+1)(n+1)\\
+& = (n+1)^2
+\end{align}
+\]</p>
+</div>
+
+<p>Therefore, it follows by induction that <span class="math inline">1 + 3 + 5 + 7 + ... + (2<em>n</em> − 1)=<em>n</em><sup>2</sup></span> as required.</p>
+<p style="text-align:right;">\( \square \)</p>
+
+<h3 id="proposition-1">Proposition</h3>
+<p>If <span class="math inline"><em>n</em> ∈ ℕ</span>, then <span class="math inline">3|(<em>n</em><sup>3</sup> − <em>n</em>)</span>.</p>
+<h4>Proof</h4>
+<div class="proof-body">
+<p><b>Base Case: </b>\( S_1: 1^3-1 = 0 \) and we \( 0 \) is divisible by 3, base case holds.</p>
+<p><b>Inductive Step: </b>Assume \( 3 | n^3-n \), this mean that there exists an integer \( a \) such that
+\( 3a = n^3-n \).</p>
+<p>Our goal is to show that \( S_{n+1} \) holds i.e. \( 3 | (n+1)^3 - (n+1) \)</p>
+<p>\[
+\begin{align}
+(n+1)^3 - (n+1) & = n^3+3n^2+3n+1-n-1\\
+& = n^3+3n^2+3n-n\\
+& = (n^3-n)+3n^2+3n\\
+& = 3a + 3n^2 + 3n\\
+& = 3(a+n^2+n)
+\end{align}
+\]</p>
+</div>
+
+<p>It follows by induction that <span class="math inline">3|(<em>n</em><sup>3</sup> − <em>n</em>)</span>.</p>
+<p style="text-align:right;">\( \square \)</p>
+
+<h2 id="exercises">Exercises</h2>
+<h3 id="exercise">Exercise</h3>
+<p>If <span class="math inline"><em>n</em></span> is a non-negative integer, then <span class="math inline">5|(<em>n</em><sup>5</sup> − <em>n</em>)</span>.</p>
+<h3 id="exercise-1">Exercise</h3>
+<p>If <span class="math inline"><em>n</em> ∈ ℤ</span> and <span class="math inline"><em>n</em> ≥ 0</span>, then <br /><span class="math display">$$ \sum_{i=0}^{n} i.i! = (n+1)!-1 $$</span><br /></p>
+<h3 id="exercise-2">Exercise</h3>
+<p>For every Natural Number <span class="math inline"><em>n</em></span>, <span class="math inline">2<sup>0</sup> + 2<sup>1</sup> + 2<sup>2</sup> + ... + 2<sup><em>n</em></sup> = 2<sup><em>n</em> + 1</sup> − 1</span>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Induction is actually more general than this, it can work on any collection which obeys the <a href="https://en.wikipedia.org/wiki/Well-ordering_principle">Well-Ordering Principle</a>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>This is sometimes referred to as the <strong>Basis</strong>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Read this as “<span class="math inline"><em>S</em><sub><em>n</em></sub></span> implies <span class="math inline"><em>S</em><sub><em>n</em> + 1</sub></span>”.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>I am gradually introducing notation to get you used to it, if you find it confusing, revisit the <a href="#definition" class="uri">#definition</a> and read this again.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>This is sometimes referred to as the <strong>Induction Step</strong>.<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>Read this as “<span class="math inline"><em>n</em></span> belongs to the set <span class="math inline">ℕ</span> of <em>Natural Numbers</em>”.<a href="#fnref6">↩</a></p></li>
+</ol>
+</div>
