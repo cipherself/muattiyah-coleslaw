@@ -123,15 +123,15 @@ if we add or remove arguments from the data constructor. Also, we have to keep i
 
 ```haskell
 data User = User
-	{ name	:: String
-	, age	:: Int
-	}
+  { name  :: String
+  , age   :: Int
+  }
 
 -- Create a User
 user1 = User
-	{ name = "Oliver Heaviside"
-	, age = 74
-	}
+  { name = "Oliver Heaviside"
+  , age = 74
+  }
 
 -- This still works
 user2 = User "James Clerk Maxwell" 48
@@ -150,9 +150,9 @@ We also get a nice field update syntax
 changeAge user newAge = user { age = newAge}
 
 user1 = User
-	{ name = "Oliver Heaviside"
-	, age = 74
-	}
+  { name = "Oliver Heaviside"
+  , age = 74
+  }
 
 newuser = changeAge user1 42
 ```
@@ -161,8 +161,9 @@ newuser = changeAge user1 42
 Unfortunately records have some issues, refer to [this](https://ghc.haskell.org/trac/ghc/wiki/Records "Issues with records in Haskell") for more details.
 
 
-## Parametrized
+## Parametrized Types
 Type constructors can be parametrized with types, the standard `Prelude` library define the `Maybe` type:
+
 ```haskell
 data Maybe a = Nothing | Just a
 ```
