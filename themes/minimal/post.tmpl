@@ -8,7 +8,7 @@
       {$post.date}
     {/if}
 </div>
-<div class="tags">{\n}
+<div class="tags info">{\n}
   {if $post.tags}
   Tagged as {foreach $tag in $post.tags}
   <a href="{$config.domain}/{$tag.url}">{$tag.name}</a>{nil}

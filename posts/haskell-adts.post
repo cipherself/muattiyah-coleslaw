@@ -1,0 +1,207 @@
+;;;;;
+title: ADTs (Algebraic Data Types) in Haskell
+date: 2018-05-30
+tags: haskell, programming
+format: md
+;;;;;
+
+Algebraic Data Types are a way for us to define types like the ones that come with Haskell e.g. `Bool` and `Int`.
+
+## Single Constructor Without Arguments
+The most simple data type we can construct in Haskell is a type with a single constructor,
+
+```haskell
+data Frame = MkFrame
+x = MkFrame
+```
+
+Examining the type in `ghci`
+
+```
+:> :type MkFrame
+MkFrame :: Frame
+
+:> :type x
+x :: Frame
+```
+
+In this example, we use the `data` keyword to signify a **Data Type**, `Frame` is the name of that type and we refer to it as a **Type Constructor**. `MkFrame` is called a **Data Constructor** and this is how we create new instances of the type `Frame`.
+
+## Enums
+Enums (Enumeration Types), also referred to as *Sum Types* allow us to design a type that is reminiscent of a Logical OR. Suppose we want to have a type that will represent a day in the week, the day will be either Saturday, or Monday, or Tuesday, ...etc.
+
+```haskell
+data Day = Saturday | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday
+day = Tuesday
+```
+
+Examining the type in `ghci`
+
+```
+:> :type Saturday
+Saturday :: Day
+
+:> :type day
+pday :: Day
+```
+
+### Pattern Matching
+We can pattern match on our data type like so:
+
+```haskell
+dayNumber :: Day -> Int
+dayNumber Saturday  = 1
+dayNumber Sunday    = 2
+dayNumber Monday    = 3
+dayNumber Tuesday   = 4
+dayNumber Wednesday = 5
+dayNumber Thursday  = 6
+dayNumber Friday    = 7
+```
+
+or using a `case of` statement:
+
+```haskell
+dayNumberCase :: Day -> Int
+dayNumberCase x =
+  case x of
+    Saturday  -> 0
+    Sunday    -> 2
+    Monday    -> 3
+    Tuesday   -> 4
+    Wednesday -> 5
+    Thursday  -> 6
+    Friday    -> 7
+```
+
+## Constructors with arguments
+We can also declare types whose constructor takes one or more arguments, these are commonly referred to as *Product Types*. Let's say we want to represent a point in the cartesian coordinate system i.e. a point with `x` and `y` coordinates,
+
+```haskell
+data Point = P Int Int
+mypoint = P 1 2
+```
+
+Examining in `ghci`
+
+```
+:> :type P
+P :: Int -> Int -> Point
+
+:> :type mypoint
+mypoint :: Point
+
+:> :type P 1 2
+P 1 2 :: Point
+```
+
+It's a convention in Haskell code to sometimes label the data constructor with the same label as the type constructor, to illustrate this with our `Point` example:
+
+```haskell
+data Point = Point Int Int
+mypoint = Point 1 2
+```
+
+## Record Syntax
+Let's say we want to define a `User` type that has the `name` and `age` of a user, we can try to do something like this
+
+```haskell
+data User = User String Int
+```
+where `name` is of type `String` and `age` is of type `Int`. However, in our application, we will want to get the name and age from an instance of this data type, we can do this like so:
+
+```haskell
+getName :: User -> String
+getName (User name _) = name
+
+getAge :: User -> Int
+getAge (User _ age) = age
+```
+
+but, as you can imagine, this would get too daunting and verbose if our data constructor takes a large number of arguments, and we'll have to modify all these accessor functions
+if we add or remove arguments from the data constructor. Also, we have to keep in mind the position of each argument. Enter records, records allow us to write:
+
+```haskell
+data User = User
+	{ name	:: String
+	, age	:: Int
+	}
+
+-- Create a User
+user1 = User
+	{ name = "Oliver Heaviside"
+	, age = 74
+	}
+
+-- This still works
+user2 = User "James Clerk Maxwell" 48
+```
+
+and get accessor functions for free, these will be automagically generated:
+
+```haskell
+name :: User -> String
+age :: User -> Int
+```
+
+We also get a nice field update syntax
+
+```haskell
+changeAge user newAge = user { age = newAge}
+
+user1 = User
+	{ name = "Oliver Heaviside"
+	, age = 74
+	}
+
+newuser = changeAge user1 42
+```
+
+### Record Downsides
+Unfortunately records have some issues, refer to [this](https://ghc.haskell.org/trac/ghc/wiki/Records "Issues with records in Haskell") for more details.
+
+
+## Parametrized
+Type constructors can be parametrized with types, the standard `Prelude` library define the `Maybe` type:
+```haskell
+data Maybe a = Nothing | Just a
+```
+
+Here, `Maybe` is parametrized with the generic type `a` which can take on any type, this is a bit like **Generics** in other languages. The `Maybe` type
+allows us to express the nonexistence of a value, for example when trying to take the head of a list, instead of erroneously applying head to an empty
+list, we can defend against this:
+
+```haskell
+lhead :: [a] -> Maybe a
+lhead [] = Nothing
+lhead xs = Just (head xs)
+```
+
+And, playing around in `ghci`
+
+```
+:> :type lhead []
+lhead [] :: Maybe a
+
+:> :type lhead ['a']
+lhead ['a'] :: Maybe Char
+
+:> :type lhead [1]
+lhead [1] :: Num a => Maybe a
+```
+
+## Recursive Types
+Haskell allows us to define types in terms of themselves *recursive types*. Let's illustrate this by making a type for a **Binary Tree**:
+
+````haskell
+data BinTree a = EmptyTree
+               | Node a (BinTree a) (BinTree a)
+
+mytree = Node 1 EmptyTree EmptyTree
+```
+
+Here, we constructed `mytree` to be a tree with a single node, with an empty left and right subtrees. We can also construct a tree with 3 nodes:
+
+```haskell
+mytree2 = Node 1 (Node 2 EmptyNode EmptyNode) (Node 3 EmptyNode EmptyNode)
+```
