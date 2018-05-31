@@ -28,7 +28,7 @@ x :: Frame
 In this example, we use the `data` keyword to signify a **Data Type**, `Frame` is the name of that type and we refer to it as a **Type Constructor**. `MkFrame` is called a **Data Constructor** and this is how we create new instances of the type `Frame`.
 
 ## Enums
-Enums (Enumeration Types), also referred to as *Sum Types* allow us to design a type that is reminiscent of a Logical OR. Suppose we want to have a type that will represent a day in the week, the day will be either Saturday, or Monday, or Tuesday, ...etc.
+Enums (Enumeration Types), also referred to as **Sum Types** allow us to design a type that is reminiscent of a Logical OR. Suppose we want to have a type that will represent a day in the week, the day will be either Saturday, or Monday, or Tuesday, ...etc.
 
 ```haskell
 data Day = Saturday | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday
@@ -42,7 +42,7 @@ Examining the type in `ghci`
 Saturday :: Day
 
 :> :type day
-pday :: Day
+day :: Day
 ```
 
 ### Pattern Matching
@@ -75,7 +75,7 @@ dayNumberCase x =
 ```
 
 ## Constructors with arguments
-We can also declare types whose constructor takes one or more arguments, these are commonly referred to as *Product Types*. Let's say we want to represent a point in the cartesian coordinate system i.e. a point with `x` and `y` coordinates,
+We can also declare types whose constructor takes one or more arguments, these are commonly referred to as **Product Types**. Let's say we want to represent a point in the cartesian coordinate system i.e. a point with `x` and `y` coordinates,
 
 ```haskell
 data Point = P Int Int
@@ -137,7 +137,7 @@ user1 = User
 user2 = User "James Clerk Maxwell" 48
 ```
 
-and get accessor functions for free, these will be automagically generated:
+and get accessor functions for free, these will be automatically generated:
 
 ```haskell
 name :: User -> String
@@ -162,7 +162,7 @@ Unfortunately records have some issues, refer to [this](https://ghc.haskell.org/
 
 
 ## Parametrized Types
-Type constructors can be parametrized with types, the standard `Prelude` library define the `Maybe` type:
+Type constructors can be parametrized with types, the standard `Prelude` library defines the `Maybe` type:
 
 ```haskell
 data Maybe a = Nothing | Just a
@@ -192,7 +192,7 @@ lhead [1] :: Num a => Maybe a
 ```
 
 ## Recursive Types
-Haskell allows us to define types in terms of themselves *recursive types*. Let's illustrate this by making a type for a **Binary Tree**:
+Haskell allows us to define types in terms of themselves i.e. **recursive types**. Let's illustrate this by making a type for a **Binary Tree**:
 
 ````haskell
 data BinTree a = EmptyTree
